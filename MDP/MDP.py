@@ -43,7 +43,6 @@ class MDP:
         :param action_selected - Current action to execute.
         Perform the action on the current continuous state.
         '''
-        # Your Code Goes Here!
         # default reward
         reward = 0
 
@@ -112,8 +111,6 @@ class MDP:
         '''
         Convert the current continuous state to a discrete state.
         '''
-        # Your Code Goes Here!
-
         # if ball outbound, last state
         if(self.ball_x > 1):
           state = 10368

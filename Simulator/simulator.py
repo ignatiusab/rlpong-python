@@ -15,7 +15,6 @@ class Simulator:
         self.alpha_value = alpha_value       
         self.gamma_value = gamma_value
         
-        # Your Code Goes Here!
         self.curState = 0
         self.d_curState = 0
         self.Q = []
@@ -33,8 +32,6 @@ class Simulator:
         Choose action based on an epsilon greedy approach
         :return action selected
         '''
-
-        # Your Code Goes Here!
         if( uniform(0,1) < self.epsilon_value):
             action_selected = randint(0,2)
             #print "r"
@@ -53,7 +50,6 @@ class Simulator:
         '''
         Train the agent over a certain number of games.
         '''
-        # Your Code Goes Here!
         print ("start training")
         #print self.curState.discretize_state()
         for i in range (self.num_games):
@@ -64,7 +60,6 @@ class Simulator:
         '''
         Simulate an actual game till the agent loses.
         '''
-        # Your Code Goes Here!
         reward=0
         
         self.curState = MDP()
